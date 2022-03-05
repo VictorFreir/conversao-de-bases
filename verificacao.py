@@ -20,8 +20,7 @@ def mensagem_erro():
         quit()
 
 def verifica_numero(numero):
-    try:
-        numero = int(numero)
-        return numero
-    except:
-        mensagem_erro()
+    for caractere in numero:
+        if numero == ' ':
+            mensagem_erro()        
+    return numero
